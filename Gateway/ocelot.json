@@ -1,0 +1,23 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/widget",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44395
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/widget",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
+    }
+  ]
+}
